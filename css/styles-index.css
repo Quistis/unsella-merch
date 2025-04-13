@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("/img/background-image.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* font-family: Arial, sans-serif; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; */
+  height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #000000;
+
+  overflow: hidden;
+}
+
+/* #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+} */
+
+/* Ссылка оборачивающая контент */
+.link {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* центрируем */
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  z-index: 10; /* выше фона и других элементов */
+}
+
+/* Контейнер для изображения и подписи */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Оформление изображения */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  position: static;
+  display: block;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Стиль для подписи */
+.caption {
+  margin: 0;
+  margin-top: 100px;
+  /* margin-bottom: 320px; */
+  /* font-size: 1.2rem; */
+  font-size: 120px;
+  font-weight: 900;
+  color: #fff;
+
+  text-align: center;
+
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black,
+     0px -2px 0 black,
+     2px  0px 0 black,
+     0px  2px 0 black,
+    -2px  0px 0 black;
+}
